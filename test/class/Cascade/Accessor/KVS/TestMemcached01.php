@@ -17,6 +17,18 @@ final class Cascade_Accessor_KVS_TestMemcached01
     const SCHEMA_NAME = 'test#Accessor_KVS_TestMemcached01';
 
     // ----[ Methods ]------------------------------------------------
+    // {{{ setUp
+    /**
+     *  初期化処理
+     */
+    public /* void */
+        function setUp(/* void */)
+    {
+        if (!extension_loaded('memcached')) {
+            $this->markTestSkipped("Can't use memcached extension. skip test");
+        }
+    }
+    // }}}
     // {{{ test_mget_01
     public function test_mget_01()
     {

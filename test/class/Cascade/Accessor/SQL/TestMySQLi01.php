@@ -36,6 +36,9 @@ final class Cascade_Accessor_SQL_TestMySQLi01
     public /* void */
         function setUp(/* void */)
     {
+        if (!extension_loaded("mysqli")) {
+            $this->markTestSkipped("Can't use mysqli extension. skip test");
+        }
         $this->provider();
     }
     // }}}
