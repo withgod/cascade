@@ -26,6 +26,8 @@
       <file>class/Cascade/Accessor/Config/TestPHPArray01.php</file>
       <file>class/Cascade/Accessor/Config/TestIniFile01.php</file>
       <file>class/Cascade/Accessor/Config/TestCSVFile01.php</file>
+
+      <file>class/Cascade/System/TestSchema01.php</file>
     </testsuite>
   </testsuites>
 </phpunit>
